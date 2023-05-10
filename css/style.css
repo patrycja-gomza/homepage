@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #f5fffa;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.chapter {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.interestingWord {
+    color: #0000ff;
+}
+
+.container {
+    overflow-x: auto;
+}
+
+.imgHobby {
+    border-radius: 50%;
+}
+
+.buttonChangeBackground {
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    width: 40%;
+    color: #f8f9f9;
+    background: #7e7e81;
+    cursor: pointer;
+}
+
+.buttonChangeBackground:hover {
+    color: #000000;
+}
+
+.buttonChangeBackground:focus {
+    border: 5px solid #ffffff;
+}
+
+.body--brightDark {
+    background-color: #dcefe6;
+}

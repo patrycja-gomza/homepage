@@ -1,0 +1,29 @@
+.article {
+    text-align: center;
+    background-color: #dcdcdc;
+    border: 1px solid #999999;
+    margin: 20px 0;
+}
+
+.article__list {
+    list-style: none;
+}
+
+.article__item {
+    font-style: italic;
+    display: inline-block;
+}
+
+.article__link {
+    color: #000000;
+    padding: 7px;
+    text-decoration: none;
+}
+
+.article__link:visited {
+    color: #00008b;
+}
+
+.article__link:hover {
+    background-color: #93cdec;
+}

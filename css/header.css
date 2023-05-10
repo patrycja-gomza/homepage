@@ -1,0 +1,51 @@
+.header__title {
+    color: #02a6f2;
+    text-align: center;
+}
+
+.header__button {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header__container {
+    background-color: #93cdec;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header__subContainer {
+    color: #f8f9f9;
+    background: #7e7e81;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header__buttonPhoto {
+    cursor: pointer;
+}
+
+.header__contactLink {
+    color: #f8f9f9;
+    text-decoration: none;
+    border-top: 1px solid #f8f9f9;
+    padding-top: 5px;
+}
+
+.header__contactLink:hover {
+    background-color: #03a9f4;
+}
+
+.header__photo {
+    border: 1px outset #03a9f4;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px 5px #808080;
+}
+
+.header__title--newClass {
+    color: #0ab924;
+}

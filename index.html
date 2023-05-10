@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja pierwsza strona</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body js-body">
+
+    <header class="header">
+        <h1 class="header__title js-headerTitle"> Moja pierwsza strona internetowa </h1>
+
+        <p>
+            <button class="header__button js-buttonChangeColor">Zmień kolor nagłówka</button>
+        </p>
+
+        <div class="header__container">
+            <div class="header__subContainer">
+                <h2>Patrycja Gomza</h2>
+                <p>mgr inż. Budownictwa Lądowego i Wodnego</p>
+                <p><a class="header__contactLink" href="mailto:patrycja.gomza@fhp.ch">patrycja.gomza@fhp.ch</a></p>
+            </div>
+            <img class="header__photo js-headerPhoto" width="200"
+                src="https://i.postimg.cc/T24mwLYS/20230301-202933.jpg" alt="Patrycja Gomza">
+            <p>
+                <button class="header__buttonPhoto js-buttonRemovePhoto">Usuń zdjęcie</button>
+            </p>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href="#o-mnie">O mnie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#projekty">Projekty</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#moje-cele-zawodowe">Moje cele zawodowe</a>
+            </li>
+            <li class="navigation__item"><a class="navigation__link" href="#hobby">Hobby</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3 id="o-mnie">O mnie</h3>
+            <p class="chapter">
+                Ukończyłam <b>studia na kierunku budownictwo lądowe i wodne</b> na <span
+                    class="interestingWord">Politechnice
+                    Wrocławskiej</span> i przez ostatnie 8 lat pracowałam jako inżynier w różnych biurach projektowych,
+                zajmując
+                się projektowaniem konstrukcji budynków.<br> Jestem osobą ambitną, która w wyzwaniach widzi możliwości
+                rozwoju,
+                a innych ludzi traktuje ze szczerością i
+                szacunkiem. Ponadto cechuje mnie wysokie poczucie odpowiedzialności oraz konsekwencja, co znajduje
+                odzwierciedlenie w moim <i>hobby</i>. Interesuję się szkoleniem psów, gdzie obowiązkowość i dobra
+                organizacja są
+                ważnym elementem nie tylko codziennego treningu, ale również życia.
+            </p>
+        </section>
+
+        <section>
+            <h3 id="projekty">Projekty</h3>
+            <div class="container">
+                <table class="table">
+                    <caption class="table__caption">Tabela 1: Moje referencje projektowe z zakresu Budownictwa</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col">Projekt</th>
+                        <th class="table__cell table__cell--header" scope="col">Inwestor</th>
+                        <th class="table__cell table__cell--header" scope="col">Rok realizacji</th>
+                        <th class="table__cell table__cell--header" scope="col">Zakres moich zadań w projekcie</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Bahnstrecke 3603 Frankfurt/M Hbf - Wiesbaden Hbf, Niemcy
+                        </th>
+                        <td class="table__cell">DB Netz AG</td>
+                        <td class="table__cell">2013-2018</td>
+                        <td class="table__cell">Plany zabezpieczenia wykopu, uziemienia, szalunkowe i zbrojeniowe.
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">City Gate Basel, Szwajcaria</th>
+                        <td class="table__cell">Patrimonium Swiss Real Estate Fund</td>
+                        <td class="table__cell">2018-2019</td>
+                        <td class="table__cell">Model 3D konstrukcji budynku, plany szalunkowe i zbrojeniowe.</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Balzlihof Dornach, Szwajcaria</th>
+                        <td class="table__cell">Immotreu GmbH</td>
+                        <td class="table__cell">2019-2020</td>
+                        <td class="table__cell">Sprawdzenie nośności konstrukcji żelbetowej, odbiory zbrojenia na
+                            budowie.
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Gesamtsanierung PH HGK Davos, Szwajcaria</th>
+                        <td class="table__cell">Baukla AG</td>
+                        <td class="table__cell">2021</td>
+                        <td class="table__cell">Analiza sposobów wzmocnienia konstrukcji
+                        </td>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">MFH Tamins, Szwajcaria</th>
+                        <td class="table__cell">osoba prywatna</td>
+                        <td class="table__cell">2022</td>
+                        <td class="table__cell" rowspan="2">Obliczenia statyczno-wytrzymałościowe konstrukcji
+                            żelbetowej i
+                            dachu
+                            drewnianego, analiza
+                            sejsmiczna.
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">MFH Edenstrasse Davos, Szwajcaria</th>
+                        <td class="table__cell">Davos Davos Klosters Bergbahnen AG</td>
+                        <td class="table__cell">w trakcie realizacji</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="moje-cele-zawodowe">Moje cele zawodowe</h3>
+            <p class="chapter">
+                Moja kariera zawodowa jest dla mnie równoznaczna z moim życiem. Możliwość codziennego rozwoju,
+                doskonalenia
+                swoich umiejętności i zdolności oraz wzbogacanie się o nowe znajomości. Dzięki kursie z <strong
+                    class="interestingWord">YouCode</strong> <em>mam jasno określony cel</em>: praca na stanowisku
+                <i>Frontend
+                    Developer</i>. Chciałbym z pasją realizować projekty, prowadzić je do sukcesu i wnieść w nie
+                całe
+                swoje
+                <i>know-how</i> z doświadczenia w branży budowlanej w innowacyjny sposób.
+            </p>
+        </section>
+
+        <section>
+            <h3 id="hobby">Hobby</h3>
+            <p class="chapter">
+                Interesuję się szkoleniem psów, a cała moja uwaga w tym temacie skupia się głownie na mojej psiej
+                przyjaciółce Natami Go Mukashibanashi. W wolnym czasie uwielbiamy wspólne wędrówki po Alpach
+                Szwajcarskich.
+            </p>
+            <img class="imgHobby" width="300" src="https://i.postimg.cc/gJwwXYgF/Img-Hobby-1.jpg"
+                alt="Hobby image number 1">
+            <img class="imgHobby" width="300" src="https://i.postimg.cc/7LtGZCMn/Img-Hobby-2.jpg"
+                alt="Hobby image number 2">
+            <img class="imgHobby" width="300" src="https://i.postimg.cc/RFjWwjY3/Img-Hobby-3.jpg"
+                alt="Hobby image number 3">
+
+            <article class="article">
+                <h4> Najpiękniejsze miejsca w Szwajcarii (linki otwierają się w nowej karcie):</h4>
+                <ul class="article__list">
+                    <li class="article__item">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.myswitzerland.com/de-ch/reiseziele/lauterbrunnen-und-lauterbrunnental/?_gl=1*2bzevc*_up*MQ..*_ga*MTA2ODc1NzAxLjE2ODA1NDQ0MDc.*_ga_F6N1LVHY7B*MTY4MDU0NDQwNi4xLjAuMTY4MDU0NDQwNi4wLjAuMA..">Lauterbrunnen</a>
+                    </li>
+                    <li class="article__item">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.myswitzerland.com/de-ch/reiseziele/grindelwald/?_gl=1*nxd2in*_up*MQ..*_ga*MTIyMjMwMjkxLjE2ODA1NDQzNTE.*_ga_F6N1LVHY7B*MTY4MDU0NDM1MS4xLjAuMTY4MDU0NDM2My4wLjAuMA..">Grindelwald</a>
+                    </li>
+                    <li class="article__item">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.myswitzerland.com/de-ch/reiseziele/interlaken/">Interlaken</a>
+                    </li>
+                    <li class="article__item">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.myswitzerland.com/de-ch/reiseziele/matterhorn-sinnbild-fuer-die-schweiz/?_gl=1*1hz7v5r*_up*MQ..*_ga*OTI0NzM0MDIuMTY4MDU0NDYyMw..*_ga_F6N1LVHY7B*MTY4MDU0NDYyNC4xLjAuMTY4MDU0NDYyNC4wLjAuMA..">Matterhorn</a>
+                    </li>
+                    <li class="article__item">
+                        <a class="article__link" rel="noreferrer noopener" target="_blank"
+                            href="https://www.myswitzerland.com/de-ch/reiseziele/pilatus/?_gl=1*4hpmbf*_up*MQ..*_ga*OTI0NzM0MDIuMTY4MDU0NDYyMw..*_ga_F6N1LVHY7B*MTY4MDU0NDYyNC4xLjAuMTY4MDU0NDYzMi4wLjAuMA..">Pilatus</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <p>
+            <button class="buttonChangeBackground js-buttonChangeBackground">Zmień kolor tła na <span
+                    class="js-themeName">ciemniejszy</span></button>
+        </p>
+
+    </main>
+
+    <footer class="footer">
+        <p> © Copyright 2023 by Patrycja Gomza | Wszystkie prawa zastrzeżone </p>
+    </footer>
+
+</body>
+
+</html>
