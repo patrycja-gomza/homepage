@@ -1,25 +1,44 @@
-console.log("Cześć!");
+{
+    function welcome() {
+        console.log("Cześć!");
+    };
+    welcome();
 
-let buttonChangeColor = document.querySelector(".js-buttonChangeColor");
-let headerTitle = document.querySelector(".js-headerTitle");
+    const onChangeHeaderColor = () => {
+        const headerTitle = document.querySelector(".js-headerTitle");
+        headerTitle.classList.toggle("header__title--newClass");
+    };
+    const init1 = () => {
+        const buttonChangeColor = document.querySelector(".js-buttonChangeColor");
+        buttonChangeColor.addEventListener("click", onChangeHeaderColor);
+    };
+    init1();
 
-buttonChangeColor.addEventListener("click", () => {
-    headerTitle.classList.toggle("header__title--newClass");
-});
+    const removePhoto = () => {
+        const headerPhoto = document.querySelector(".js-headerPhoto");
+        headerPhoto.remove();
+    };
+    const deleteButtonRemovePhoto = () => {
+        const buttonRemovePhoto = document.querySelector(".js-buttonRemovePhoto");
+        buttonRemovePhoto.remove();
+    };
+    const init2 = () => {
+        const buttonRemovePhoto = document.querySelector(".js-buttonRemovePhoto");
+        buttonRemovePhoto.addEventListener("click", removePhoto);
+        buttonRemovePhoto.addEventListener("click", deleteButtonRemovePhoto);
+    };
+    init2();
 
-let buttonRemovePhoto = document.querySelector(".js-buttonRemovePhoto");
-let headerPhoto = document.querySelector(".js-headerPhoto");
+    const onChangeBackgroundClick = () => {
+        const body = document.querySelector(".js-body");
+        const themeName = document.querySelector(".js-themeName");
 
-buttonRemovePhoto.addEventListener("click", () => {
-    headerPhoto.remove();
-    buttonRemovePhoto.remove();
-});
-
-let buttonChangeBackground = document.querySelector(".js-buttonChangeBackground");
-let body = document.querySelector(".js-body");
-let themeName = document.querySelector(".js-themeName");
-
-buttonChangeBackground.addEventListener("click", () => {
-    body.classList.toggle("body--brightDark");
-    themeName.innerText = body.classList.contains("brightDark") ? "jaśniejszy" : "ciemniejszy";
-});
+        body.classList.toggle("body--brightDark");
+        themeName.innerText = body.classList.contains("brightDark") ? "jaśniejszy" : "ciemniejszy"
+    };
+    const init3 = () => {
+        const buttonChangeBackground = document.querySelector(".js-buttonChangeBackground");
+        buttonChangeBackground.addEventListener("click", onChangeBackgroundClick);
+    };
+    init3();
+}
