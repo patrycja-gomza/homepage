@@ -1,7 +1,7 @@
 # Patrycja Gomza - my first website
-![Patrycja Gomza](https://github.com/patrycja-gomza/homepage/blob/main/images/P.Gomza.jpg?raw=true)
+![Patrycja Gomza](https://github.com/patrycja-gomza/my-first-website/blob/main/images/P.Gomza.jpg?raw=true)
 ## Demo
-https://patrycja-gomza.github.io/homepage/
+https://patrycja-gomza.github.io/my-first-website/
 
 ## General Info
 My website is organized into the following four sections guided by navigation: about me, projects, my professional goals, hobbies. In addition to text, the content of the sections uses images, tables and links. The website also has three button-controlled actions: change header color, delete image, change background color. 
